@@ -17,7 +17,7 @@ h3 {
 }
 
 .title-description {
-  font-size: .8em;
+  font-size: .9em;
   color: #908E8E;
 }
 
@@ -32,9 +32,9 @@ label {
 label::before{
   width: 20px;
   height: 20px;
-  border: 1px solid #b1c0bc;
+  border: 1px solid blue;
   content: ' ';
-  border-radius: 10px;
+  border-radius: 2px;
   float: left;
   margin:0 10px;
   cursor: pointer;
@@ -49,7 +49,7 @@ label::after{
   width: 10px;
   height: 10px;
   background-color: #b1c0bc;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
