@@ -102,10 +102,14 @@ button {
   border: none;
   transition: .5s;
   cursor: pointer; 
-  background: red;
-  color: white;
+  background: rgb(216, 213, 213);
+  color: black;
 }
 
 button:hover {
   transform:scale(1.1);
+}
+
+input[type=tel] {
+  width: 93.5%;
 }
