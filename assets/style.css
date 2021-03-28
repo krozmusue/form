@@ -102,7 +102,7 @@ button {
   border: none;
   transition: .5s;
   cursor: pointer; 
-  background: red;
+  background: yellow;
   color: white;
 }
 
