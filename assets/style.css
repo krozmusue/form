@@ -1,0 +1,111 @@
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 30em;
+  margin: 0 auto 2em;
+}
+
+.checkboxes {
+  display: flex; 
+  flex-direction: column;
+}
+
+.title-description {
+  font-size: .8em;
+  color: #908E8E;
+}
+
+label {
+  border: 1px solid gray;
+  padding: .7em 1em;
+  border-radius: .4em;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+label::before{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b1c0bc;
+  content: ' ';
+  border-radius: 10px;
+  float: left;
+  margin:0 10px;
+  cursor: pointer;
+}
+
+label::after{
+  display: none;
+  transform: translate(1.05em, -1.1em);
+  content: '';
+  color: #b1c0bc;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #b1c0bc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label::after {
+  display: block;
+}
+input[type=checkbox] {
+  display:none;
+}
+
+.card-details {
+  display: flex;
+}
+
+input, select {
+  width: 100%;
+  border: 1px solid gray;
+  padding: .7em 1em;
+  border-radius: .4em;
+  font-weight: bold;
+  font-size: .9em;
+  margin-top: .5em;
+} 
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-size: .9em;
+  padding: .75em 1.7em .6em;
+  border-radius: .7em;
+  border: none;
+  transition: .5s;
+  cursor: pointer; 
+  background: red;
+  color: white;
+}
+
+button:hover {
+  transform:scale(1.1);
+}

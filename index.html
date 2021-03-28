@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+  <div>
+    <div class="header">
+      <div>
+        <img src="./assets/Icon.png" style="size: 20px">
+      </div>
+      <div>
+        <img src="./assets/avatar.png" style="size: 20px">
+      </div>
+    </div>
+    <div class="content">
+      <form class="form" action="#">
+        <h3>Select additional services</h3>
+        <span class="title-description">Services</span>
+        <div class="checkboxes mt-2">
+          <input type="checkbox" name="myCheckBox" id="checkbox">
+          <label for="checkbox">Massage and Spa
+            <span style="float: right">+$50.00</span>
+          </label>
+          <input type="checkbox" name="myCheckBox" id="checkbox1">
+          <label for="checkbox1">Airport pickup
+            <span style="float: right">+$20.00</span>
+          </label>
+          <input type="checkbox" name="myCheckBox" id="checkbox2">
+          <label for="checkbox2">Breakfast
+            <span style="float: right">+$15.00</span>
+          </label>
+        </div>
+
+        <span class="title-description">Payment for booking</span>
+        <select class="mt-2">
+          <option>Credit or debit Visa card</option>
+          <option>Paypal</option>
+          <option>Bitcoin</option>
+        </select>
+        <input 
+          type="tel" 
+          inputmode="numeric" 
+          pattern="[0-9\s]{13,19}" 
+          autocomplete="cc-number" 
+          maxlength="19" 
+          placeholder="xxxx xxxx xxxx xxxx"
+        >
+        <div class="card-details">
+          <input 
+            type="text" 
+            placeholder="Expiration"
+            class="mr-2"
+          >
+          <input 
+            type="number"
+            pattern="[0-9\s]{3}"
+            placeholder="CVV"
+          >
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div>
+        <button>Back</button>
+      </div>
+      <div>
+        <button class="next">Next</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
