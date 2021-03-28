@@ -32,9 +32,9 @@ label {
 label::before{
   width: 20px;
   height: 20px;
-  border: 1px solid #b1c0bc;
+  border: 1px solid blue;
   content: ' ';
-  border-radius: 10px;
+  border-radius: 2px;
   float: left;
   margin:0 10px;
   cursor: pointer;
